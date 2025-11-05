@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 import { ReactLenis } from "lenis/react";
-import { ViewTransitions } from "next-view-transitions";
+// import { ViewTransitions } from "next-view-transitions";
 
 export default function ClientLayout({ children }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -52,10 +52,8 @@ export default function ClientLayout({ children }) {
       };
 
   return (
-    <ViewTransitions>
-      <ReactLenis root options={scrollSettings}>
-        {children}
-      </ReactLenis>
-    </ViewTransitions>
+    <ReactLenis root options={scrollSettings}>
+      {children}
+    </ReactLenis>
   );
 }
