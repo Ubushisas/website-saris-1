@@ -412,7 +412,7 @@ export default function Home() {
             </div>
             <AnimatedButton
               label="Discover More"
-              route="/studio"
+              route="/services"
               animateOnScroll={false}
               delay={showPreloader ? 10.3 : 1.15}
             />
