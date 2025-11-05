@@ -112,15 +112,19 @@ const HowWeWork = () => {
           <div className="how-we-work-header-content">
             <div className="how-we-work-header-callout">
               <Copy delay={0.1}>
-                <p>Process in focus</p>
+                <p>Your relaxation, our passion</p>
               </Copy>
             </div>
             <Copy delay={0.15}>
               <h3>
-                From first sketches to final details, our process is shaped to
-                bring clarity and rhythm
+                We design every treatment around you
               </h3>
             </Copy>
+            <div className="keep-scrolling">
+              <Copy delay={0.2}>
+                <p>↓ Keep scrolling</p>
+              </Copy>
+            </div>
             <div className="how-we-work-steps" ref={stepsRef}>
               <div
                 className={`how-we-work-step ${
