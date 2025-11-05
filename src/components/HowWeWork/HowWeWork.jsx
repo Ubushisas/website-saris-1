@@ -185,9 +185,7 @@ const HowWeWork = () => {
               <h3>HidroLips</h3>
             </div>
             <p className="md">
-              We set guiding principles for light, massing, and flow. Quick
-              models and diagrams test options and reveal the direction that
-              best serves the brief.
+              Rejuvenate your lips with exfoliation, hyaluronic acid and lip pigment to give you a healthy pout.
             </p>
           </div>
         </div>
@@ -200,9 +198,7 @@ const HowWeWork = () => {
               <h3>Chemical Peels</h3>
             </div>
             <p className="md">
-              We develop drawings and specifications across structure, services,
-              and joinery. Materials and samples are reviewed in natural light
-              while budget and timeline stay in view.
+              Indulge in the transformative experience of our Chemical Peel service, designed to rejuvenate and revitalize your skin.
             </p>
           </div>
         </div>
@@ -215,9 +211,7 @@ const HowWeWork = () => {
               <h3>Collagen Threads</h3>
             </div>
             <p className="md">
-              We oversee construction with care and precision. After final
-              review and finishing, we hand over a space that is ready to live
-              in, complete with guidance for long term care.
+              This innovative treatment applies collagen threads to the skin's surface without injections.
             </p>
           </div>
         </div>
