@@ -450,15 +450,6 @@ export default function Home() {
               </div>
             </div>
             <div className="what-we-do-col">
-              <Copy delay={0.1}>
-                <p>Your relaxation, our passion</p>
-              </Copy>
-
-              <Copy delay={0.15}>
-                <p className="lg">
-                  We design every treatment around you.
-                </p>
-              </Copy>
             </div>
           </div>
         </div>
