@@ -172,9 +172,7 @@ const HowWeWork = () => {
               <h3>Hydration Glow Facial</h3>
             </div>
             <p className="md">
-              We begin with listening and study. Site, climate, and daily
-              routines inform the brief so we can define aims, constraints, and
-              measures of success with clarity.
+              All services of our deep cleaning facial include a LED mask session and facial massage.
             </p>
           </div>
         </div>
