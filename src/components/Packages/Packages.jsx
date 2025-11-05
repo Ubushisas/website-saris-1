@@ -5,6 +5,11 @@ import Copy from "../Copy/Copy";
 
 const Packages = () => {
   const router = useRouter();
+
+  const handleBookNow = () => {
+    router.push("/connect");
+  };
+
   const packages = [
     {
       name: "Essential Glow",
@@ -88,7 +93,7 @@ const Packages = () => {
                   ))}
                 </ul>
               </div>
-              <button className="package-button">Book Now</button>
+              <button className="package-button" onClick={handleBookNow}>Book Now</button>
             </div>
           ))}
         </div>
