@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  /* INVERTED SPA PALETTE - LIGHT MODE */
+
+  /* TEXT COLORS (Dark to Light) - For text on light backgrounds */
+  --base-100: rgb(42, 37, 32);     /* #2A2520 - Rich Espresso: Main titles, high emphasis */
+  --base-200: rgb(58, 50, 42);     /* #3A322A - Deep Brown: Secondary important text */
+  --base-250: rgb(138, 155, 133);  /* #8A9B85 - Deep Sage: Mid-level text */
+  --base-300: rgb(168, 187, 163);  /* #A8BBA3 - Sage Green: Descriptive text */
+  --base-350: rgb(196, 164, 132);  /* #C4A484 - Warm Taupe: Labels/categories */
+  --base-400: rgb(212, 196, 168);  /* #D4C4A8 - Light Taupe: Borders/separators */
+
+  /* BACKGROUND COLORS (Light to Dark) - For light, airy spa feel */
+  --base-450: rgb(232, 222, 202);  /* #E8DECA - Pale Sand: Interactive elements */
+  --base-500: rgb(247, 241, 222);  /* #F7F1DE - Cream: Main background */
+
+  /* SPECIAL ACCENTS */
+  --accent-sage: rgb(168, 187, 163);      /* #A8BBA3 - Calming sage green */
+  --accent-terracotta: rgb(184, 124, 76); /* #B87C4C - Warm terracotta */
+  --accent-cream: rgb(247, 241, 222);     /* #F7F1DE - Light cream */
+  --accent-taupe: rgb(196, 164, 132);     /* #C4A484 - Warm neutral taupe */
+  --accent-dark: rgb(42, 37, 32);         /* #2A2520 - Dark accent for contrast */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: "Alice", serif;
+  background-color: #FDFBF5; /* Lightest cream - spa white */
+}
+
+section,
+.footer {
+  background-color: var(--base-500);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  user-select: none;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 500;
+  letter-spacing: -0.25rem;
+  line-height: 1.05;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 550;
+  letter-spacing: -0.15rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.075rem;
+  line-height: 1.2;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p.md {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p.lg {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+p.mono {
+  text-transform: uppercase;
+  font-family: "DM Mono";
+  font-size: 0.9rem;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+}
+
+p.md.mono {
+  font-size: 1rem;
+}
+
+p.lg.mono {
+  font-size: 1.1rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--base-200);
+  border-radius: 0.35rem;
+}
+
+span.spacer {
+  display: inline-block;
+  width: 20rem;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    letter-spacing: -0.05rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    letter-spacing: -0.025rem;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+}
+
+::view-transition-group(root) {
+  z-index: auto !important;
+}
+
+::view-transition-image-pair(root) {
+  isolation: isolate;
+  will-change: transform, opacity, clip-path;
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 10000;
+  animation: none !important;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+  animation: none !important;
+}
+
+body.menu-open * {
+  pointer-events: none;
+}
+
+body.menu-open .menu,
+body.menu-open .menu *,
+body.menu-open .menu-toggle {
+  pointer-events: auto;
+}
