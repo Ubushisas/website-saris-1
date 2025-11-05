@@ -1,8 +1,10 @@
 "use client";
 import "./Packages.css";
+import { useRouter } from "next/navigation";
 import Copy from "../Copy/Copy";
 
 const Packages = () => {
+  const router = useRouter();
   const packages = [
     {
       name: "Essential Glow",
