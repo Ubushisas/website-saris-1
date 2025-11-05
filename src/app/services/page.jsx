@@ -6,6 +6,7 @@ import ConditionalFooter from "@/components/ConditionalFooter/ConditionalFooter"
 import HowWeWork from "@/components/HowWeWork/HowWeWork";
 import Spotlight from "@/components/Spotlight/Spotlight";
 import CTAWindow from "@/components/CTAWindow/CTAWindow";
+import Packages from "@/components/Packages/Packages";
 import Copy from "@/components/Copy/Copy";
 
 const page = () => {
@@ -18,6 +19,7 @@ const page = () => {
             <HowWeWork />
           </div>
         </section>
+        <Packages />
         <CTAWindow
           img="/studio/about-cta-window.jpg"
           header="Wellness Hydration Bar and Spa"
