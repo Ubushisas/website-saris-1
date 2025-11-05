@@ -432,19 +432,19 @@ export default function Home() {
           <div className="what-we-do-content">
             <div className="what-we-do-col">
               <div className="what-we-do-tags" ref={tagsRef}>
-                <a href="/studio" className="what-we-do-tag">
+                <a href="/services" className="what-we-do-tag">
                   <h3>Facials</h3>
                 </a>
-                <a href="/studio" className="what-we-do-tag">
+                <a href="/services" className="what-we-do-tag">
                   <h3>Skin Care</h3>
                 </a>
-                <a href="/studio" className="what-we-do-tag">
+                <a href="/services" className="what-we-do-tag">
                   <h3>Massage</h3>
                 </a>
-                <a href="/studio" className="what-we-do-tag">
+                <a href="/services" className="what-we-do-tag">
                   <h3>Therapy</h3>
                 </a>
-                <a href="/studio" className="what-we-do-tag">
+                <a href="/services" className="what-we-do-tag">
                   <h3>Body</h3>
                 </a>
               </div>
