@@ -142,6 +142,10 @@
   color: var(--base-100);
 }
 
+.what-we-do .what-we-do-header h1 {
+  font-size: 4.5rem;
+}
+
 .what-we-do .what-we-do-content {
   width: 100%;
   display: flex;
