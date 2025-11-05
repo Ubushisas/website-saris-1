@@ -279,13 +279,13 @@ const Spotlight = () => {
             className="spotlight-intro-text"
             ref={(el) => (introTextElementsRef.current[0] = el)}
           >
-            <p>Wellness</p>
+            <p>Our</p>
           </div>
           <div
             className="spotlight-intro-text"
             ref={(el) => (introTextElementsRef.current[1] = el)}
           >
-            <p>Spa</p>
+            <p>Space</p>
           </div>
         </div>
         <div className="spotlight-bg-img">
