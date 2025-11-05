@@ -180,18 +180,24 @@
 .what-we-do .what-we-do-col .what-we-do-tags {
   width: 100%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
 }
 
 .what-we-do .what-we-do-tag {
   display: inline-block;
   padding: 1rem 2rem;
-  margin: 0 0.5rem 0.5rem 0;
+  margin: 0;
   border: 1px solid var(--base-400);
   border-radius: 4rem;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   color: inherit;
+  white-space: nowrap;
 }
 
 .what-we-do .what-we-do-tag:hover {
@@ -218,9 +224,12 @@
     width: 100%;
   }
 
+  .what-we-do .what-we-do-col .what-we-do-tags {
+    flex-wrap: wrap;
+  }
+
   .what-we-do .what-we-do-tag {
     padding: 0.75rem 1.5rem;
-    margin: 0 0.25rem 0.25rem 0;
   }
 }
 
