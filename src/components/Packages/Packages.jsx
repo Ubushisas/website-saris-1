@@ -12,43 +12,76 @@ const Packages = () => {
 
   const packages = [
     {
-      name: "Essential Glow",
-      price: "$150",
-      duration: "90 minutes",
-      description: "Perfect for first-time visitors looking to experience our signature treatments.",
+      name: "Serenity Glow Facial Package",
+      price: "$195",
+      duration: "3 sessions",
+      description: "Experience the ultimate facial rejuvenation with our signature Serenity Glow treatment.",
       features: [
-        "Deep Cleaning Facial",
+        "3 Serenity Glow Facial Sessions",
         "LED Mask Session",
         "Facial Massage",
-        "Complimentary Consultation"
+        "Deep Cleansing Treatment"
       ]
     },
     {
-      name: "Complete Renewal",
-      price: "$280",
-      duration: "2.5 hours",
-      description: "Our most popular package combining multiple treatments for total rejuvenation.",
+      name: "Facial & Massage Combo",
+      price: "$160",
+      duration: "90 minutes",
+      description: "Perfect combination of facial care and full body relaxation in one session.",
       features: [
-        "Hydration Glow Facial",
-        "HidroLips Treatment",
-        "Full Body Massage",
+        "Serenity Glow Facial",
+        "60-Minute Full Body Massage",
         "LED Light Therapy",
         "Aromatherapy Session"
       ],
       featured: true
     },
     {
-      name: "Ultimate Luxury",
-      price: "$450",
-      duration: "4 hours",
-      description: "The complete spa experience with all our premium treatments.",
+      name: "Wellness Deep Cleansing",
+      price: "$290",
+      duration: "3 sessions",
+      description: "Deep cleansing and purifying treatment package for comprehensive skin renewal.",
       features: [
-        "Chemical Peel",
-        "Collagen Threads",
-        "Full Body Massage",
-        "HidroLips Treatment",
-        "Manicure & Pedicure",
-        "Complimentary Glass of Champagne"
+        "3 Deep Cleansing Facial Sessions",
+        "Extraction Treatment",
+        "LED Mask Therapy",
+        "Customized Skin Analysis"
+      ]
+    },
+    {
+      name: "Wellness Dermabrasion",
+      price: "$315",
+      duration: "3 sessions",
+      description: "Advanced exfoliation treatment for smoother, more radiant skin.",
+      features: [
+        "3 Dermabrasion Sessions",
+        "Microdermabrasion Treatment",
+        "Skin Texture Refinement",
+        "Post-Treatment Care Kit"
+      ]
+    },
+    {
+      name: "Lipotropic Injections - 5 Pack",
+      price: "$225",
+      duration: "5 sessions",
+      description: "Boost your metabolism and energy levels with our lipotropic injection package.",
+      features: [
+        "5 Lipotropic Injections",
+        "Metabolism Boost",
+        "Energy Enhancement",
+        "Weight Management Support"
+      ]
+    },
+    {
+      name: "Lymphatic Treatments - 6 Pack",
+      price: "$450",
+      duration: "6 sessions",
+      description: "Promote detoxification and reduce swelling with specialized lymphatic drainage.",
+      features: [
+        "6 Lymphatic Drainage Sessions",
+        "Reduces Swelling & Bloating",
+        "Improves Circulation",
+        "Detoxification Support"
       ]
     }
   ];

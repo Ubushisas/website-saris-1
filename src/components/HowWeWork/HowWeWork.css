@@ -164,6 +164,13 @@
   letter-spacing: -0.04rem;
 }
 
+.how-we-work .how-we-work-card-price {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--base-200);
+  margin-top: 0.5rem;
+}
+
 .how-we-work .how-we-work-card-copy {
   color: var(--base-350);
   padding: 0.8rem;

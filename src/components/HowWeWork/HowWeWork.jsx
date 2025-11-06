@@ -170,6 +170,7 @@ const HowWeWork = () => {
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
               <h3>Hydration Glow Facial</h3>
+              <p className="how-we-work-card-price">$125.00</p>
             </div>
             <p className="md">
               All services of our deep cleaning facial include a LED mask session and facial massage.
@@ -183,6 +184,7 @@ const HowWeWork = () => {
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
               <h3>HidroLips</h3>
+              <p className="how-we-work-card-price">$175.00</p>
             </div>
             <p className="md">
               Rejuvenate your lips with exfoliation, hyaluronic acid and lip pigment to give you a healthy pout.
@@ -196,6 +198,7 @@ const HowWeWork = () => {
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
               <h3>Chemical Peels</h3>
+              <p className="how-we-work-card-price">$150.00</p>
             </div>
             <p className="md">
               Indulge in the transformative experience of our Chemical Peel service, designed to rejuvenate and revitalize your skin.
@@ -209,6 +212,7 @@ const HowWeWork = () => {
           <div className="how-we-work-card-copy">
             <div className="how-we-work-card-index-label">
               <h3>Collagen Threads</h3>
+              <p className="how-we-work-card-price">$115.00</p>
             </div>
             <p className="md">
               This innovative treatment applies collagen threads to the skin's surface without injections.
