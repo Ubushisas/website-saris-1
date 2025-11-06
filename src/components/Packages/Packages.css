@@ -53,13 +53,14 @@
 .package-card {
   background-color: var(--base-450);
   border-radius: 1.5rem;
-  padding: 2.5rem;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0;
   transition: all 0.3s ease;
   position: relative;
   border: 2px solid transparent;
+  overflow: hidden;
 }
 
 .package-card:hover {
@@ -75,8 +76,8 @@
 
 .featured-badge {
   position: absolute;
-  top: -12px;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
   background-color: var(--accent-terracotta);
   color: var(--base-500);
   padding: 0.5rem 1.5rem;
@@ -85,13 +86,31 @@
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.package-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.package-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.package-card:hover .package-image img {
+  transform: scale(1.05);
 }
 
 .package-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  padding-bottom: 1.5rem;
+  padding: 2rem 2.5rem 1.5rem;
   border-bottom: 1px solid var(--base-300);
 }
 
@@ -123,10 +142,12 @@
   color: var(--base-250);
   font-size: 1rem;
   line-height: 1.6;
+  padding: 0 2.5rem;
 }
 
 .package-features {
   flex: 1;
+  padding: 0 2.5rem;
 }
 
 .features-title {
@@ -163,7 +184,8 @@
 }
 
 .package-button {
-  width: 100%;
+  width: calc(100% - 5rem);
+  margin: 0 2.5rem 2.5rem;
   padding: 1rem 2rem;
   background-color: var(--base-100);
   color: var(--base-500);

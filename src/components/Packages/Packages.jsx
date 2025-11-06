@@ -12,27 +12,29 @@ const Packages = () => {
 
   const packages = [
     {
-      name: "Serenity Glow Facial Package",
+      name: "Serenity Glow Facial",
       price: "$195",
       duration: "3 sessions",
-      description: "Experience the ultimate facial rejuvenation with our signature Serenity Glow treatment.",
+      description: "Ultimate facial rejuvenation with our signature treatment.",
+      image: "/packages/1.jpg",
       features: [
-        "3 Serenity Glow Facial Sessions",
-        "LED Mask Session",
+        "3 Facial Sessions",
+        "LED Mask Therapy",
         "Facial Massage",
-        "Deep Cleansing Treatment"
+        "Deep Cleansing"
       ]
     },
     {
       name: "Facial & Massage Combo",
       price: "$160",
       duration: "90 minutes",
-      description: "Perfect combination of facial care and full body relaxation in one session.",
+      description: "Perfect blend of facial care and full body relaxation.",
+      image: "/packages/2.jpg",
       features: [
         "Serenity Glow Facial",
-        "60-Minute Full Body Massage",
-        "LED Light Therapy",
-        "Aromatherapy Session"
+        "60-Min Body Massage",
+        "LED Therapy",
+        "Aromatherapy"
       ],
       featured: true
     },
@@ -40,48 +42,52 @@ const Packages = () => {
       name: "Wellness Deep Cleansing",
       price: "$290",
       duration: "3 sessions",
-      description: "Deep cleansing and purifying treatment package for comprehensive skin renewal.",
+      description: "Deep purifying treatment for comprehensive skin renewal.",
+      image: "/packages/3.jpg",
       features: [
-        "3 Deep Cleansing Facial Sessions",
+        "3 Deep Cleansing Sessions",
         "Extraction Treatment",
         "LED Mask Therapy",
-        "Customized Skin Analysis"
+        "Skin Analysis"
       ]
     },
     {
       name: "Wellness Dermabrasion",
       price: "$315",
       duration: "3 sessions",
-      description: "Advanced exfoliation treatment for smoother, more radiant skin.",
+      description: "Advanced exfoliation for smoother, radiant skin.",
+      image: "/packages/4.jpg",
       features: [
         "3 Dermabrasion Sessions",
-        "Microdermabrasion Treatment",
-        "Skin Texture Refinement",
-        "Post-Treatment Care Kit"
+        "Microdermabrasion",
+        "Texture Refinement",
+        "Treatment Care Kit"
       ]
     },
     {
-      name: "Lipotropic Injections - 5 Pack",
+      name: "Lipotropic Injections",
       price: "$225",
       duration: "5 sessions",
-      description: "Boost your metabolism and energy levels with our lipotropic injection package.",
+      description: "Boost metabolism and energy levels naturally.",
+      image: "/packages/5.jpg",
       features: [
-        "5 Lipotropic Injections",
+        "5 Injections",
         "Metabolism Boost",
         "Energy Enhancement",
-        "Weight Management Support"
+        "Weight Management"
       ]
     },
     {
-      name: "Lymphatic Treatments - 6 Pack",
+      name: "Lymphatic Treatments",
       price: "$450",
       duration: "6 sessions",
-      description: "Promote detoxification and reduce swelling with specialized lymphatic drainage.",
+      description: "Promote detoxification and reduce swelling.",
+      image: "/packages/6.jpg",
       features: [
-        "6 Lymphatic Drainage Sessions",
-        "Reduces Swelling & Bloating",
+        "6 Drainage Sessions",
+        "Reduces Bloating",
         "Improves Circulation",
-        "Detoxification Support"
+        "Detox Support"
       ]
     }
   ];
@@ -110,6 +116,11 @@ const Packages = () => {
               className={`package-card ${pkg.featured ? 'featured' : ''}`}
             >
               {pkg.featured && <div className="featured-badge">Most Popular</div>}
+              {pkg.image && (
+                <div className="package-image">
+                  <img src={pkg.image} alt={pkg.name} />
+                </div>
+              )}
               <div className="package-header">
                 <h3>{pkg.name}</h3>
                 <div className="package-price">

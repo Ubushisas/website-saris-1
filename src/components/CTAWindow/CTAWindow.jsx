@@ -3,12 +3,16 @@ import "./CTAWindow.css";
 
 import Copy from "../Copy/Copy";
 
-const CTAWindow = ({ img, header, callout, description }) => {
+const CTAWindow = ({ img, video, header, callout, description }) => {
   return (
     <section className="cta-window">
       <div className="container">
         <div className="cta-window-img-wrapper">
-          <img src={img} alt="" />
+          {video ? (
+            <video src={video} autoPlay loop muted playsInline />
+          ) : (
+            <img src={img} alt="" />
+          )}
         </div>
         <div className="cta-window-img-overlay"></div>
         <div className="cta-window-header">

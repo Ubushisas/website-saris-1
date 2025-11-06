@@ -21,7 +21,7 @@ const page = () => {
         </section>
         <Packages />
         <CTAWindow
-          img="/studio/about-cta-window.jpg"
+          video="/spa-video.mp4"
           header="Wellness Hydration Bar and Spa"
           callout="Your relaxation, our passion"
           description="We design every treatment around you."
