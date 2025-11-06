@@ -20,8 +20,8 @@ const Spotlight = () => {
 
   // NOTE: These values are interconnected - when speed changes, it affects when images finish their movement, which also affects the gap between images. When you change the number of items in spotlightItems array, you'll need to adjust these config settings together. Test different combinations until you find the right balance that looks good.
   const config = {
-    gap: 0.08,
-    speed: 0.3,
+    gap: 0.12,
+    speed: 0.25,
     arcRadius: 500,
   };
 
