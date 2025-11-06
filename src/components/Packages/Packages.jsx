@@ -114,30 +114,31 @@ const Packages = () => {
             <div
               key={index}
               className={`package-card ${pkg.featured ? 'featured' : ''}`}
+              onClick={handleBookNow}
             >
-              {pkg.featured && <div className="featured-badge">Most Popular</div>}
               {pkg.image && (
                 <div className="package-image">
                   <img src={pkg.image} alt={pkg.name} />
                 </div>
               )}
-              <div className="package-header">
-                <h3>{pkg.name}</h3>
-                <div className="package-price">
-                  <span className="price">{pkg.price}</span>
-                  <span className="duration">{pkg.duration}</span>
+              <div className="package-overlay"></div>
+              <div className="package-content">
+                <div className="package-main">
+                  <h3>{pkg.name}</h3>
+                  <p className="package-description">{pkg.description}</p>
+                </div>
+                <div className="package-footer">
+                  <div className="package-info">
+                    <div className="package-price-box">
+                      <span className="price">{pkg.price}</span>
+                    </div>
+                    <div className="package-duration">
+                      <span>{pkg.duration}</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <p className="package-description">{pkg.description}</p>
-              <div className="package-features">
-                <p className="features-title">Includes:</p>
-                <ul>
-                  {pkg.features.map((feature, idx) => (
-                    <li key={idx}>{feature}</li>
-                  ))}
-                </ul>
-              </div>
-              <button className="package-button" onClick={handleBookNow}>Book Now</button>
+              {pkg.featured && <div className="featured-badge">Most Popular</div>}
             </div>
           ))}
         </div>
