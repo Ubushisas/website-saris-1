@@ -108,14 +108,25 @@
 
 @media (max-width: 1000px) {
   .hero {
-    height: 175svh;
+    height: 150svh;
   }
+
   .hero .hero-content {
     width: 100%;
+    gap: 1.5rem;
+  }
+
+  .hero .hero-header h1 {
+    font-size: 4rem;
+    letter-spacing: -0.15rem;
   }
 
   .hero .hero-tagline {
-    width: 75%;
+    width: 85%;
+  }
+
+  .hero .hero-tagline p {
+    font-size: 1.15rem;
   }
 
   .hero .hero-stats .container {
@@ -128,6 +139,42 @@
 
   .hero .hero-stats .stat-divider {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 140svh;
+  }
+
+  .hero .hero-content {
+    gap: 1.25rem;
+    padding: 0.75rem;
+  }
+
+  .hero .hero-header h1 {
+    font-size: 3rem;
+    letter-spacing: -0.1rem;
+  }
+
+  .hero .hero-tagline {
+    width: 90%;
+  }
+
+  .hero .hero-tagline p {
+    font-size: 1rem;
+  }
+
+  .hero .hero-stats .stat {
+    padding: 0.75rem;
+  }
+
+  .hero .hero-stats .stat h2 {
+    font-size: 1.75rem;
+  }
+
+  .hero .hero-stats .stat p {
+    font-size: 0.875rem;
   }
 }
 
@@ -213,14 +260,18 @@
 
 @media (max-width: 1000px) {
   .what-we-do .container h1 {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
+  }
+
+  .what-we-do .what-we-do-header h1 {
+    font-size: 3.5rem;
   }
 
   .what-we-do-content {
     flex-direction: column;
   }
 
-  .what-we-do .what-we-do-col:nth-child(1) p.lg {
+  .what-we-do .what-we-do-col:nth-child(2) p.lg {
     width: 100%;
   }
 
@@ -230,6 +281,28 @@
 
   .what-we-do .what-we-do-tag {
     padding: 0.75rem 1.5rem;
+  }
+
+  .what-we-do .what-we-do-tag h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .what-we-do .container h1 {
+    margin-bottom: 4rem;
+  }
+
+  .what-we-do .what-we-do-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .what-we-do .what-we-do-tag {
+    padding: 0.6rem 1.25rem;
+  }
+
+  .what-we-do .what-we-do-tag h3 {
+    font-size: 1rem;
   }
 }
 
@@ -644,6 +717,11 @@
 @media (max-width: 1000px) {
   .animated-gallery-container {
     flex-direction: column;
+    gap: 2rem;
+  }
+
+  .animated-gallery-copy h3 {
+    font-size: 1.75rem;
   }
 
   .animated-reviews-section {
@@ -651,6 +729,7 @@
     min-height: 250vh;
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   .animated-review-member {
@@ -682,5 +761,53 @@
 
   .animated-menu-links h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .animated-gallery-copy {
+    padding: 1rem;
+  }
+
+  .animated-gallery-copy h3 {
+    font-size: 1.5rem;
+  }
+
+  .animated-review-initial h1 {
+    font-size: 6rem;
+  }
+
+  .animated-review-card {
+    padding: 1.5rem;
+  }
+
+  .animated-review-img {
+    max-width: 180px;
+  }
+
+  .animated-review-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .animated-review-text {
+    font-size: 0.85rem;
+    max-width: 95%;
+  }
+
+  .animated-outro-content {
+    gap: 3rem;
+  }
+
+  .animated-outro-content h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .animated-menu-links {
+    gap: 1.5rem;
+  }
+
+  .animated-menu-links h2 {
+    font-size: 1.5rem;
   }
 }
