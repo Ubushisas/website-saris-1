@@ -1,9 +1,11 @@
 .packages {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   padding: 8rem 0;
   background-color: var(--base-500);
   color: var(--base-100);
+  z-index: 2;
 }
 
 .packages .container {
